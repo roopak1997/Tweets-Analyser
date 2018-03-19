@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="msrit.microsoftstudent.com.twitteranalyser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TonesDetailedAnalysis"
+            android:label="Detailed Analysis" />
+        <activity
+            android:name=".Search"
+            android:label="Search" />
+        <activity
+            android:name=".GeoSearch"
+            android:label="Geographic Search" />
+        <activity android:name=".GeoSearchDetailed" />
+        <activity android:name=".Trends" />
+        <activity
+            android:name=".TrendsDetailed"
+            android:label="Trends Analysis" />
+        <activity android:name=".TrendAnalysis" />
+        <activity android:name=".help" />
+        <activity android:name=".Track_a_meeting"
+            android:label="Track this Meeting !!"></activity>
+    </application>
+
+</manifest>
