@@ -146,7 +146,7 @@ public class Search extends AppCompatActivity {
 
     public void gettonesetpie(){
         ToneAnalyzer service = new ToneAnalyzer(ToneAnalyzer.VERSION_DATE_2016_05_19);
-        service.setUsernameAndPassword("bbcc2f3f-a81c-47dd-8fa4-95d204332f60", "RSGnVkoEM7B7");
+        service.setUsernameAndPassword("USERNAME_KEY", "PASSWORD_KEY");
 
         try{
             tone = service.getTone(tweets, null).execute();
@@ -214,10 +214,10 @@ public class Search extends AppCompatActivity {
             ConfigurationBuilder cb = new ConfigurationBuilder();
 
             cb.setDebugEnabled(true)
-                    .setOAuthConsumerKey("LWY0wjNd6Yjgy8XN0xL0C0E8P")
-                    .setOAuthConsumerSecret("FiIATMNToRlnekpBg4poXFaT2pNVyejIYDzveI2N9a1Ibjf4X7")
-                    .setOAuthAccessToken("863833685346328576-xmfHmDYgEzI2ujeSwm2rcLpkBGwmfhI")
-                    .setOAuthAccessTokenSecret("zr8y5BGEj4MrP43PcGeNoPsGjfQvkaITGh0uwjGCFGHKx");
+                    .setOAuthConsumerKey("WATSON_CONSUMER_KEY")
+                    .setOAuthConsumerSecret("WATSON_CONSUMER_SECRET_KEY")
+                    .setOAuthAccessToken("WATSON_AUTH_ACCESS_TOKEN")
+                    .setOAuthAccessTokenSecret("WATSON_AUTH_ACCESS_SECRET");
 
 
             TwitterFactory tf = new TwitterFactory(cb.build());
